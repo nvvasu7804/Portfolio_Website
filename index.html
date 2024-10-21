@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Venkata Vasu</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Venkata Vasu</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./assets/profile-pic.png" alt="Venkata Vasu">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Venkata Vasu</h1>
+            <p class="section_text_p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/N V VASU RESUME.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My Linkedin Profile" 
+                class="icon" 
+                onclick="location.href='http://www.linkedin.com/in/venkata-vasu-nallamekala'" >
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/nvvasu7804'" >
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h2 class="title">About Me</h2>
+        <div class="section-container">
+            <div class="section_pic_container">
+                <img src="./assets/about-pic.jpg" alt="Profile Pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <h1 class="about-heading">Education</h1>
+                <div class="about-container">
+                    
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>B.Tech Bachelors Degree</h3>
+                        <p>Electrical And Electronics Engineering <br> CGPA: 7.69</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Diploma</h3>
+                        <p>Electrical And Electronics Engineering<br>Percentage: 78.65%</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a dedicated Electrical Engineering student at Vignan's LARA Institute, passionate about technology and innovation. Certified in Python for Data Science, I possess strong analytical and problem-solving skills. Currently, I’m expanding my expertise into full-stack web development with MongoDB, Express.js, React.js, and Node.js, ready to tackle new challenges.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data Analytics</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" >
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" >
+                            <div>
+                                <h3>Microsoft Power BI
+                                </h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" >
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" >
+                            <div>
+                                <h3>MS Excel</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Web Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" >
+                            <div>
+                                <h3>Html</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" >
+                            <div>
+                                <h3>CSS
+                                </h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" >
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/ecommerce sales report.jpg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title">E-commerce Sales Dashboard</h2>
+                    <div class="btn-container">
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nvvasu7804'">
+                            Github
+                        </button> -->
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nvvasu7804/E-Commerce-Sales-Dashboard'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/blinkit_page.jpg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title">BlinkIt Sales Analysis Dashboard</h2>
+                    <div class="btn-container">
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nvvasu7804'">
+                            Github
+                        </button> -->
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nvvasu7804/Blinkit-PowerBi-Report'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/portfolio_website.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title">Responsive Portfolio Website</h2>
+                    <div class="btn-container">
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nvvasu7804'">
+                            Github
+                        </button> -->
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nvvasu7804/Portfolio_Website'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon">
+                <p>
+                    <a href="mailto:nvvasu7804@gmail.com">nvvasu7804@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin" class="icon contact-icon">
+                <p>
+                    <a href="http://www.linkedin.com/in/venkata-vasu-nallamekala">Linkedin</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169 2024 Venkata Vasu. All Rigts Reserved</p>
+        </footer> 
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
